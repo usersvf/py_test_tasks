@@ -1,8 +1,8 @@
 from random import randint
 from random import choice
 from string import ascii_letters
-import csv
 from timeit import default_timer
+import csv
 
 letters = ascii_letters
 csv_values = []
@@ -29,7 +29,7 @@ def generate_csv(N: int, header: dict):
     end = default_timer()
 
     return print(
-        f'Сгенирован {'random_generated.csv'}, количество строк: {N}, заголовки: {[head for head in header.keys()]} со типами значений {[type for type in header.values()]}. Время генерации: {end - start:.2f} cекунд'
+        f'Сгенирован {'random_generated.csv'}, количество строк: {N}, заголовки: {[head for head in header.keys()]} с типами значений в колонках {[type for type in header.values()]}. Время генерации: {end - start:.2f} cекунд'
                 )
 
 
